@@ -22,7 +22,6 @@ cd DataVault2.0
 ```bash
 # в корне проекта
 chmod +x entrypoint.sh || true
-dos2unix entrypoint.sh || true  # если файл из Windows
 docker compose up --build -d
 ```
 
@@ -31,6 +30,7 @@ docker compose up --build -d
 Открыть PowerShell в каталоге проекта и выполнить:
 
 ```powershell
+dos2unix entrypoint.sh || true
 docker compose up --build -d
 ```
 
