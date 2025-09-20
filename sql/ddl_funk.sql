@@ -86,7 +86,7 @@ CREATE TABLE dds.sat_email_meta (
     body TEXT,
     hashdiff VARCHAR(64) NOT NULL,
     load_dttm TIMESTAMPTZ DEFAULT now(),
-    PRIMARY KEY (email_hk, hashdiff, load_dttm)
+    PRIMARY KEY (email_hk, load_dttm)
 );
 
 -- ========================================================
